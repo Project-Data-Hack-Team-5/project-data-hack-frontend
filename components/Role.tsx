@@ -20,10 +20,17 @@ export default function Role({ title, salary, location, type }: Props) {
           borderRadius: '5%',
           backgroundColor: 'white'
         }}
-        maxWidth={450}
+        maxWidth={500}
+        padding={1}
         alignItems="center"
       >
-        <Box display="inline">
+        <Box
+          display="inline"
+          style={{
+            marginRight: 10,
+            marginLeft: 10
+          }}
+        >
           <Image
             src="/images/memoji.jpeg"
             alt="Picture of the author"
