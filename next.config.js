@@ -2,6 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/pathways',
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {
