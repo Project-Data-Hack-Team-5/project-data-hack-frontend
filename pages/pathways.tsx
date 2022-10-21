@@ -41,6 +41,7 @@ export default function pathways({}: Props) {
   ];
   return (
     <>
+      {/* @ts-ignore */}
       <H1>PATHWAYS</H1>
       <Box
         sx={{
