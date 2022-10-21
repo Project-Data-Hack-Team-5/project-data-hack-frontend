@@ -37,6 +37,54 @@ export default function pathways({}: Props) {
       salary: '£50,000',
       location: 'Remote',
       type: 'Full-Time'
+    },
+    {
+      title: 'Software Engineer',
+      salary: '£35,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Junior Engineer',
+      salary: '£30,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Cloud Engineer',
+      salary: '£50,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Front End Engineer',
+      salary: '£50,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Software Engineer',
+      salary: '£35,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Junior Engineer',
+      salary: '£30,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Cloud Engineer',
+      salary: '£50,000',
+      location: 'Remote',
+      type: 'Full-Time'
+    },
+    {
+      title: 'Front End Engineer',
+      salary: '£50,000',
+      location: 'Remote',
+      type: 'Full-Time'
     }
   ];
   return (
@@ -50,7 +98,13 @@ export default function pathways({}: Props) {
         alignItems={'center'}
       >
         <p>Filter by: </p>
-        <Box sx={{ maxWidth: 120 }}>
+        <Box
+          sx={{ maxWidth: 210 }}
+          style={{
+            marginRight: 5,
+            marginLeft: 5
+          }}
+        >
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Location</InputLabel>
             <Select
@@ -60,14 +114,19 @@ export default function pathways({}: Props) {
               label="Location"
               onChange={() => console.log('test')}
             >
-              <MenuItem value={1}>Location</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={1}>Manchester</MenuItem>
+              <MenuItem value={20}>Remote</MenuItem>
             </Select>
           </FormControl>
         </Box>
 
-        <Box sx={{ maxWidth: 120 }}>
+        <Box
+          sx={{ maxWidth: 210 }}
+          style={{
+            marginRight: 5,
+            marginLeft: 5
+          }}
+        >
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Occupation</InputLabel>
             <Select
@@ -77,14 +136,19 @@ export default function pathways({}: Props) {
               label="Occupation"
               onChange={() => console.log('test')}
             >
-              <MenuItem value={1}>Occupation</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={1}>Software Engineer</MenuItem>
+              <MenuItem value={20}>Cloud Engineer</MenuItem>
             </Select>
           </FormControl>
         </Box>
 
-        <Box sx={{ maxWidth: 120 }}>
+        <Box
+          sx={{ maxWidth: 210 }}
+          style={{
+            marginRight: 5,
+            marginLeft: 5
+          }}
+        >
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Type</InputLabel>
             <Select
@@ -94,9 +158,8 @@ export default function pathways({}: Props) {
               label="Type"
               onChange={() => console.log('test')}
             >
-              <MenuItem value={1}>Type</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={1}>Full Time</MenuItem>
+              <MenuItem value={20}>Part Time</MenuItem>
             </Select>
           </FormControl>
         </Box>
