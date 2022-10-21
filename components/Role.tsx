@@ -43,12 +43,17 @@ export default function Role({ title, salary, location, type }: Props) {
           <p
             style={{
               paddingTop: 10,
-              paddingBottom: 10
+              paddingBottom: 10,
+              fontSize: 17
             }}
           >
             {title}
           </p>
-          <p>{`${salary} | ${location} | ${type}`}</p>
+          <p
+            style={{
+              fontSize: 14
+            }}
+          >{`${salary} | ${location} | ${type}`}</p>
         </Box>
       </Box>
     </>
