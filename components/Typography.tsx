@@ -16,7 +16,8 @@ const StyledH3 = styled('h3')({
   fontSize: 25
 });
 
-export const H1: React.FC = ({ children }) => {
+// @ts-ignore
+export const H1: React.FC = ({ children }: { children: React.ReactNode }) => {
   return <StyledH1>{children}</StyledH1>;
 };
 
